@@ -53,9 +53,9 @@ class FieldCellView: UIView {
     }
     
     @objc func touchButton() {
-        switch position {
-        case .x(let value): print("GO  to \(value)")
-        }
+        
+         print("GO  to \(position.x), \(position.y)")
+        
     
     }
 }

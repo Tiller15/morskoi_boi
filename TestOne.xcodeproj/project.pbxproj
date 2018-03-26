@@ -13,6 +13,7 @@
 		F9F0448B2069124200EF96E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9F0448A2069124200EF96E4 /* Assets.xcassets */; };
 		F9F0448E2069124200EF96E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F0448C2069124200EF96E4 /* LaunchScreen.storyboard */; };
 		F9F044962069177500EF96E4 /* FieldCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F044952069177500EF96E4 /* FieldCellView.swift */; };
+		F9F044982069566E00EF96E4 /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F044972069566E00EF96E4 /* FieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F9F0448D2069124200EF96E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9F0448F2069124200EF96E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9F044952069177500EF96E4 /* FieldCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCellView.swift; sourceTree = "<group>"; };
+		F9F044972069566E00EF96E4 /* FieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				F9F044832069124200EF96E4 /* AppDelegate.swift */,
 				F9F044852069124200EF96E4 /* ViewController.swift */,
 				F9F044952069177500EF96E4 /* FieldCellView.swift */,
+				F9F044972069566E00EF96E4 /* FieldView.swift */,
 				F9F044872069124200EF96E4 /* Main.storyboard */,
 				F9F0448A2069124200EF96E4 /* Assets.xcassets */,
 				F9F0448C2069124200EF96E4 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9F044862069124200EF96E4 /* ViewController.swift in Sources */,
+				F9F044982069566E00EF96E4 /* FieldView.swift in Sources */,
 				F9F044962069177500EF96E4 /* FieldCellView.swift in Sources */,
 				F9F044842069124200EF96E4 /* AppDelegate.swift in Sources */,
 			);
