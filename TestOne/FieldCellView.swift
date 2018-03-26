@@ -10,7 +10,7 @@ import UIKit
 
 class FieldCellView: UIView {
     
-    
+    var button = UIButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,7 +22,7 @@ class FieldCellView: UIView {
         let y = bounds.size.height/2 - size/2
         
         let frameButton = CGRect(x: x, y: y, width: size, height: size)
-        let button = UIButton(frame: frameButton)
+         button.frame = frameButton
         
         button.backgroundColor = UIColor.blue
         button.setTitle("Go", for: .normal)
@@ -30,11 +30,24 @@ class FieldCellView: UIView {
         addSubview(button)
     }
     
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
- 
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        let size = 0.9*bounds.size.width
+        let x = bounds.size.width/2 - size/2
+        let y = bounds.size.height/2 - size/2
+        
+        let frameButton = CGRect(x: x, y: y, width: size, height: size)
+         button.frame = frameButton
+        
+        
+        
+    }
     
     @objc func touchButton() {
     print("GO")
