@@ -8,9 +8,13 @@
 
 import UIKit
 
-
+enum FieldPosition {
+    case x(Int)
+}
 
 class ViewController: UIViewController {
+    
+    
     
     let size : CGFloat = 100
     var arrayCell = [FieldCellView]()
@@ -43,7 +47,7 @@ class ViewController: UIViewController {
             
             let offSet = width * CGFloat(value)
             let frameCell = CGRect(x: offSet, y: 0, width: width, height: size)
-            let cell = FieldCellView(frame: frameCell)
+            let cell = FieldCellView(frame: frameCell, position: FieldPosition.x(value))
             arrayCell.append(cell)
             view.addSubview(cell)
             

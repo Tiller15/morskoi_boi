@@ -10,9 +10,12 @@ import UIKit
 
 class FieldCellView: UIView {
     
+    var position: FieldPosition
+    
     var button = UIButton()
     
-    override init(frame: CGRect) {
+    init(frame: CGRect, position: FieldPosition) {
+        self.position = position
         super.init(frame: frame)
         
         backgroundColor = UIColor.gray
@@ -50,6 +53,9 @@ class FieldCellView: UIView {
     }
     
     @objc func touchButton() {
-    print("GO")
+        switch position {
+        case .x(let value): print("GO  to \(value)")
+        }
+    
     }
 }
